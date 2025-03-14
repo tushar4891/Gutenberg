@@ -19,7 +19,7 @@ export const BookList = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          `https://skunkworks.ignitesol.com:8000/books?topic=${category}&mime_type=image/jpeg`
+          `https://cors-anywhere.herokuapp.com/http://skunkworks.ignitesol.com:8000/books?topic=${category}&mime_type=image/jpeg`
         );
         const bookData = await response.json();
 
